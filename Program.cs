@@ -27,8 +27,8 @@ namespace BackEnd_Нагорнов_А.В._ЛР4
             app.UseAuthorization();
 
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                name: "default", //Название маршрута.
+                pattern: "{controller=Home}/{action=Index}/{id?}"); //Шаблон маршрута.
 
             app.Run();
         }
